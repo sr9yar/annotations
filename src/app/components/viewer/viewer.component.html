@@ -1,0 +1,7 @@
+<div class="wrapper">
+  <div class="inner" [style.scale]="scaleFactor">
+    @for (page of pages; track page.number) {
+    <app-page [src]="page.imageUrl" [pageNumber]="page.number" />
+    }
+  </div>
+</div>

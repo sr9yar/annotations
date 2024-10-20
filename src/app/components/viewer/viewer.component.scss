@@ -1,0 +1,19 @@
+:host {
+  width: 100%;
+  overflow: scroll;
+
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .inner {
+    display: block;
+    position: relative;
+    transform-origin: top;
+
+  }
+}

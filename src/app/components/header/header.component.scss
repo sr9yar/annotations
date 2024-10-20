@@ -1,0 +1,23 @@
+:host {
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-bottom: 1px solid #360b71;
+  background-color: #511d99;
+  box-sizing: border-box;
+
+  .item {
+    box-sizing: border-box;
+    padding: 0.5rem;
+
+    button {
+      padding: 0.25rem 1rem;
+    }
+  }
+}

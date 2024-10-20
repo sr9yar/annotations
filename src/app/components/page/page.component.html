@@ -1,0 +1,13 @@
+<div class="wrapper" (dragover)="onDragOver($event)">
+  <div class="inner">
+    <img (click)="onClick($event)" [src]="src | imageUrl" alt="image" />
+
+    <ng-container>
+      @for (annotation of annotations; track annotation.id) {
+      <app-annotation [annotation]="annotation" />
+      }
+    </ng-container>
+
+  </div>
+
+</div>

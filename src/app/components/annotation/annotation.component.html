@@ -1,0 +1,31 @@
+<div #wrapper (mouseover)="onMouseOver()" (mouseleave)="onMouseLeave()" (dragend)="onDragEnd($event)"
+  (dragstart)="onDragStart($event)" (drop)="onDrop($event)" class="wrapper">
+
+  <div class="icon icon-remove" (click)="remove()">
+    <span>
+      &#9760;
+    </span>
+  </div>
+  <div class="icon icon-move" (mousedown)="onMouseDown()" (mouseup)="onMouseUp($event)">
+    <span>
+      &hArr;
+    </span>
+  </div>
+
+  <div class="inner">
+
+    @switch (mode) {
+    @case ('text') {
+    <app-annotation-text [text]="text" [width]="width" [height]="height" (click)="onTextClick()"></app-annotation-text>
+    }
+    @case ('edit') {
+    <app-annotation-textarea [text]="text" [width]="width" [height]="height" (update)="updateText($event)"
+      (resize)="textareaResize($event)" (focusout)="onFocusOut()" [width]="width"></app-annotation-textarea>
+    }
+    @case ('image') {
+    <app-annotation-image [imageSrc]="imageSrc" [width]="width" [height]="height"></app-annotation-image>
+    }
+    }
+
+  </div>
+</div>

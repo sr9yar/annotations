@@ -1,0 +1,4 @@
+<div>
+  <textarea [ngModel]="value | async" (ngModelChange)="value?.next($event)" #textarea
+    (focusout)="onFocusOut($event)"></textarea>
+</div>

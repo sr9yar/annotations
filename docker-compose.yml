@@ -1,0 +1,34 @@
+services:
+
+  app:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    command: 'serve --watch --host=0.0.0.0'
+    image: annotations-frontend-image:latest
+    container_name: annotations-frontend-container
+    restart: unless-stopped
+    ports:
+      - 4200:4200
+    volumes:
+      - ./:/app
+    networks:
+      - app-network
+
+  server:
+    build:
+      context: ./server
+      dockerfile: ./Dockerfile
+    image: annotations-backend-image:latest
+    container_name: annotations-backend-container
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    volumes:
+      - ./server:/app
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

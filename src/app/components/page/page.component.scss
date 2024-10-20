@@ -1,0 +1,16 @@
+:host {
+  width: 100%;
+}
+
+.wrapper {
+  background-color: #414141;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .inner {
+    display: block;
+    position: relative;
+  }
+}
