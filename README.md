@@ -16,12 +16,13 @@ docker compose up
 
 ## Demo
 
-<p align="center">
-  <img src="demo.png" width="100%" alt="demo" />
-</p>
+<img src="demo.jpg" width="100%" alt="demo" />
+
 
 
 ## Demo video
 
-https://user-images.githubusercontent.com/5534668/demo.mp4
+<video width="320" height="240" controls>
+  <source src="demo.mp4" type="video/mp4">
+</video>
 
