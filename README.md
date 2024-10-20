@@ -24,3 +24,8 @@ docker compose up
 
 
 https://raw.githubusercontent.com/sr9yar/annotations/main/demo.mp4
+
+
+
+[![Watch](https://raw.githubusercontent.com/sr9yar/annotations/demo.jpg)](https://raw.githubusercontent.com/sr9yar/annotations/main/demo.mp4)
+
