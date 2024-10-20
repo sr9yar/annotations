@@ -22,7 +22,5 @@ docker compose up
 
 ## Demo video
 
-<video width="320" height="240" controls>
-  <source src="https://github.com/sr9yar/annotations/raw/refs/heads/main/demo.mp4" type="video/mp4">
-</video>
 
+https://raw.githubusercontent.com/sr9yar/annotations/main/demo.mp4
